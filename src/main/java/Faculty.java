@@ -18,6 +18,7 @@ public class Faculty {
     public Faculty(String name) {
         this.name = name;
     }
+    public String getName(){return this.name;}
 
     public void addRequiredSubject(String subject, int minScore) {
         requiredSubjects.add(subject);
@@ -30,17 +31,22 @@ public class Faculty {
         }
 
         for (String subject : requiredSubjects) {
-            if (!abiturientHasSubject(abiturient, subject) ||
-                    abiturient.getSubjectScore(subject) < requiredScores.get(subject)) {
+
+            if (!abiturientHasSubject(abiturient, subject) || abiturient.getSubjectScore(subject) < requiredScores.get(subject)) {
                 return false;
             }
         }
-
         return true;
     }
 
-    private boolean abiturientHasSubject(Abiturient abiturient, String subject) {
+    private boolean abiturientHasSubject(Abiturient abiturient, String subjectName) {
         List<Subject> abiturientSubjects = abiturient.getSubjects();
-        return abiturientSubjects.contains(subject);
+        for (Subject abiturientSubject : abiturientSubjects) {
+            if (abiturientSubject.getName().equals(subjectName)) {
+                return true;
+            }
+        }
+        return false;
     }
+
 }

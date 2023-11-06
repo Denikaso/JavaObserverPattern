@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class FacultysReader {
@@ -20,7 +21,10 @@ public class FacultysReader {
                             faculty = new Faculty(line);
                         } else {
                             String[] parts = line.split(": ");
-                            if (parts.length == 2) {
+                            if (Objects.equals(parts[0], "Минимальный проходной балл")) {
+                                int score = Integer.parseInt(parts[1]);
+                                faculty.setMinScore(score);
+                            } else {
                                 String subjectName = parts[0];
                                 int score = Integer.parseInt(parts[1]);
                                 faculty.addRequiredSubject(subjectName, score);
@@ -33,6 +37,10 @@ public class FacultysReader {
                         }
                     }
                 }
+                // Проверка и добавление последнего факультета
+                if (faculty != null) {
+                    faculties.add(faculty);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -42,5 +50,3 @@ public class FacultysReader {
         return faculties;
     }
 }
-
-

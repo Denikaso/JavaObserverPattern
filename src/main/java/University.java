@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observer;
 
 public class University {
     private List<Abiturient> abiturients = new ArrayList<>();
@@ -12,6 +13,13 @@ public class University {
 
     public void removeAbiturient(Abiturient abiturient) {
         abiturients.remove(abiturient);
+    }
+    public void addFaculties(Faculty faculty) {
+        faculties.add(faculty);
+    }
+
+    public void removeFaculties(Faculty faculty) {
+        faculties.remove(faculty);
     }
 
 
@@ -26,13 +34,13 @@ public class University {
 
     public void admitAbiturient(Abiturient abiturient, Faculty faculty) {
         if (faculty.isAdmissible(abiturient)) {
-            addObserver(abiturient);
+            abiturient.addFaculty(faculty);
         }
     }
-
-    public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.receiveLetter();
+    public void notifyAbiturients()
+    {
+        for (Abiturient abiturient : abiturients) {
+            abiturient.receiveLetter();
         }
     }
 }

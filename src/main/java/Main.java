@@ -9,11 +9,19 @@ public class Main {
         List<Faculty> faculties = FacultysReader.readFaculties("Faculties.txt");
 
         University university = new University();
+        for (Abiturient abiturient : abiturients)
+        {
+            university.addAbiturient(abiturient);
+        }
+        for (Faculty faculty : faculties)
+        {
+            university.addFaculties(faculty);
+        }
         for (Abiturient abiturient : abiturients) {
             for (Faculty faculty : faculties) {
                 university.admitAbiturient(abiturient, faculty);
             }
         }
-        university.notifyObservers();
+        university.notifyAbiturients();
     }
 }

@@ -2,8 +2,9 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
+import org.apache.pdfbox.pdmodel.font.PDType0Font;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 public class Abiturient implements Observer {
     private String fullName;
     private List<Subject> subjects = new ArrayList<>();
+    private List<Faculty> admittedFaculties = new ArrayList<>();
 
     public Abiturient(String fullName) {
         this.fullName = fullName;
@@ -37,7 +39,8 @@ public class Abiturient implements Observer {
         }
         return 0;
     }
-
+    public List<Faculty> getFaculties(){return admittedFaculties;}
+    public void addFaculty(Faculty faculty) {admittedFaculties.add(faculty);}
 
     @Override
     public void receiveLetter() {
@@ -47,16 +50,32 @@ public class Abiturient implements Observer {
             document.addPage(page);
 
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
-            contentStream.setFont(PDType1Font.HELVETICA_BOLD, 12);
+            PDType0Font font = PDType0Font.load(document, new File("C:\\Уник\\arial.ttf"));
+            contentStream.setFont(font, 12);
+
+            float yPosition = 700;
+
             contentStream.beginText();
-            contentStream.newLineAtOffset(50, 700);
-            contentStream.showText("Уважаемый " + fullName + ",");
-            contentStream.newLine();
-            contentStream.showText("Поздравляем! Вы приняты на факультет.");
+            contentStream.newLineAtOffset(50, yPosition);
+            contentStream.showText("Уважаемый " + fullName);
+
+            if (admittedFaculties.isEmpty()) {
+                contentStream.newLineAtOffset(0, -20);
+                contentStream.showText("К сожалению, вы не прошли ни на один факультет.");
+            } else {
+                contentStream.newLineAtOffset(0, -20);
+                contentStream.showText("Поздравляем! Вы приняты на следующие факультеты:");
+
+                for (Faculty faculty : admittedFaculties) {
+                    contentStream.newLineAtOffset(0, -20);
+                    contentStream.showText(faculty.getName());
+                }
+            }
+
             contentStream.endText();
             contentStream.close();
 
-            document.save("C:\\Уник\\Java\\lab2.2\\results" + fullName + ".pdf");
+            document.save("C:\\Уник\\Java\\lab2.2\\results\\" + fullName + ".pdf");
             document.close();
         } catch (IOException e) {
             e.printStackTrace();
