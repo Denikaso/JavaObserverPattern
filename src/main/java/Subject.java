@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 public class Subject {
     private String name;
     private int score;

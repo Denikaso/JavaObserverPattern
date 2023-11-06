@@ -1,0 +1,115 @@
+<abiturients>
+    <abiturient>
+        <name>Иванов Иван Иванович</name>
+        <subjects>
+            <subject>
+                <name>Русский язык</name>
+                <score>83</score>
+            </subject>
+            <subject>
+                <name>Математика</name>
+                <score>65</score>
+            </subject>
+            <subject>
+                <name>Информатика</name>
+                <score>77</score>
+            </subject>
+            <subject>
+                <name>Физика</name>
+                <score>54</score>
+            </subject>
+        </subjects>
+    </abiturient>
+    <abiturient>
+        <name>Одинцов Алексей Александрович</name>
+        <subjects>
+            <subject>
+                <name>Русский язык</name>
+                <score>46</score>
+            </subject>
+            <subject>
+                <name>Математика</name>
+                <score>53</score>
+            </subject>
+            <subject>
+                <name>Информатика</name>
+                <score>49</score>
+            </subject>
+            <subject>
+                <name>Физика</name>
+                <score>44</score>
+            </subject>
+            <subject>
+                <name>Обществознание</name>
+                <score>64</score>
+            </subject>
+        </subjects>
+    </abiturient>
+    <abiturient>
+        <name>Малюжец Петр Владимирович</name>
+        <subjects>
+            <subject>
+                <name>Русский язык</name>
+                <score>73</score>
+            </subject>
+            <subject>
+                <name>Математика</name>
+                <score>89</score>
+            </subject>
+            <subject>
+                <name>Физика</name>
+                <score>92</score>
+            </subject>
+            <subject>
+                <name>Иностранный язык</name>
+                <score>88</score>
+            </subject>
+            <subject>
+                <name>Обществознание</name>
+                <score>90</score>
+            </subject>
+        </subjects>
+    </abiturient>
+    <abiturient>
+        <name>Морозова Галина Петровна</name>
+        <subjects>
+            <subject>
+                <name>Русский язык</name>
+                <score>54</score>
+            </subject>
+            <subject>
+                <name>Математика</name>
+                <score>45</score>
+            </subject>
+            <subject>
+                <name>Обществознание</name>
+                <score>59</score>
+            </subject>
+            <subject>
+                <name>Литература</name>
+                <score>63</score>
+            </subject>
+        </subjects>
+    </abiturient>
+    <abiturient>
+        <name>Карпов Валерий Генадьевич</name>
+        <subjects>
+            <subject>
+                <name>Русский язык</name>
+                <score>73</score>
+            </subject>
+            <subject>
+                <name>Математика</name>
+                <score>54</score>
+            </subject>
+            <subject>
+                <name>Обществознание</name>
+                <score>86</score>
+            </subject>
+            <subject>
+                <name>Иностранный язык</name>
+                <score>69</score>
+            </subject>
+        </subjects>
+    </abiturient>
+</abiturients>

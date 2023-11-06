@@ -1,9 +1,14 @@
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 public class Faculty {
+
     private String name;
     private int minScore;
     private List<String> requiredSubjects = new ArrayList<>();

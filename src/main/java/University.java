@@ -10,27 +10,12 @@ public class University {
     public void addAbiturient(Abiturient abiturient) {
         abiturients.add(abiturient);
     }
+    public List<Abiturient> getAbiturients(){return abiturients;}
 
-    public void removeAbiturient(Abiturient abiturient) {
-        abiturients.remove(abiturient);
-    }
     public void addFaculties(Faculty faculty) {
         faculties.add(faculty);
     }
-
-    public void removeFaculties(Faculty faculty) {
-        faculties.remove(faculty);
-    }
-
-
-    public void addObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    public void removeObserver(Observer observer) {
-        observers.remove(observer);
-    }
-
+    public List<Faculty> getFaculties(){return faculties;}
 
     public void admitAbiturient(Abiturient abiturient, Faculty faculty) {
         if (faculty.isAdmissible(abiturient)) {

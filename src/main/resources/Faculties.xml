@@ -1,0 +1,34 @@
+<faculties>
+    <faculty>
+        <name>Факультет Компьютерных и Физико-Математических Наук</name>
+        <subject name="Русский язык">46</subject>
+        <subject name="Математика">48</subject>
+        <subject name="Информатика">49</subject>
+        <subject name="Физика">44</subject>
+        <minimum_passing_score>187</minimum_passing_score>
+    </faculty>
+    <faculty>
+        <name>Факультет Автоматики и Вычислительной Техники</name>
+        <subject name="Русский язык">49</subject>
+        <subject name="Математика">46</subject>
+        <subject name="Информатика">15</subject>
+        <subject name="Физика">40</subject>
+        <minimum_passing_score>156</minimum_passing_score>
+    </faculty>
+    <faculty>
+        <name>Факультет Менеджмента и Сервиса</name>
+        <subject name="Русский язык">46</subject>
+        <subject name="Математика">52</subject>
+        <subject name="Информатика">48</subject>
+        <subject name="Обществознание">56</subject>
+        <minimum_passing_score>178</minimum_passing_score>
+    </faculty>
+    <faculty>
+        <name>Факультет Филологии и Медиакоммуникаций</name>
+        <subject name="Русский язык">54</subject>
+        <subject name="Математика">42</subject>
+        <subject name="Литература">56</subject>
+        <subject name="Обществознание">52</subject>
+        <minimum_passing_score>182</minimum_passing_score>
+    </faculty>
+</faculties>

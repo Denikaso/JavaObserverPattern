@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a8fdfd9-7d6f-4104-b7d3-be619e1ad364" name="Changes" comment="init commit&#10;description of working classes, adding resources">
+    <list default="true" id="8a8fdfd9-7d6f-4104-b7d3-be619e1ad364" name="Changes" comment="added implementation with reading source data from text files, results are saved in pdf format">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FacultiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Abiturients.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Abiturients.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Faculties.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Faculties.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Abiturient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Abiturient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbiturientsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbiturientsReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Faculty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FacultysReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FacultysReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacultysReader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/University.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Abiturients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Abiturients.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Faculties.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Faculties.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +67,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-project&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,7 +88,11 @@
       <option name="presentableId" value="Default" />
       <updated>1699203435398</updated>
       <workItem from="1699203436530" duration="6027000" />
-      <workItem from="1699261014824" duration="7068000" />
+      <workItem from="1699261014824" duration="12213000" />
+      <workItem from="1699279746053" duration="2370000" />
+      <workItem from="1699282141169" duration="407000" />
+      <workItem from="1699282568412" duration="179000" />
+      <workItem from="1699282758013" duration="947000" />
     </task>
     <task id="LOCAL-00001" summary="init commit&#10;description of working classes, adding resources">
       <option name="closed" value="true" />
@@ -92,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699209937487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added implementation with reading source data from text files, results are saved in pdf format">
+      <option name="closed" value="true" />
+      <created>1699268670820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699268670820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit&#10;description of working classes, adding resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit&#10;description of working classes, adding resources" />
+    <MESSAGE value="added implementation with reading source data from text files, results are saved in pdf format" />
+    <option name="LAST_COMMIT_MESSAGE" value="added implementation with reading source data from text files, results are saved in pdf format" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
