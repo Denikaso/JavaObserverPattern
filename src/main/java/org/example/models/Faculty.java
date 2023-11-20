@@ -1,5 +1,4 @@
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+package org.example.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,2 +1,2 @@
 # JavaObserverPattern
-A learning project to explore the Observer design pattern
+A learning project to explore the org.example.Observer design pattern

@@ -1,13 +1,16 @@
-import java.io.File;
+package org.example.readers;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.io.IOException;
+
+import org.example.models.Abiturient;
+import org.example.models.Subject;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import org.xml.sax.SAXException;
-import java.io.IOException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;

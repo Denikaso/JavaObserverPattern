@@ -1,3 +1,11 @@
+package org.example;
+
+import org.example.models.Abiturient;
+import org.example.models.Faculty;
+import org.example.models.University;
+import org.example.readers.AbiturientsReader;
+import org.example.readers.FacultiesReader;
+
 import java.util.List;
 import java.util.Scanner;
 
